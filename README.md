@@ -1,1 +1,1 @@
-This repository contains some directories that hold project writen in high level programming language, e.g python
+This repo contains directories with all executed project on High-level programming language [Python ...]
