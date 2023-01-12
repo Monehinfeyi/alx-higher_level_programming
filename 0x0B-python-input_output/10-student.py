@@ -1,32 +1,18 @@
 #!/usr/bin/python3
-"""module student"""
+""" creating student class """
+
 
 class Student:
-    """class student"""
-
+    """ Defining a class"""
     def __init__(self, first_name, last_name, age):
-        """Initialize instance student
-        """
+        """ Initializing a class"""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
 
     def to_json(self, attrs=None):
-        """return a dictionary representation of instance student
-        """
-        is_list = True
-        if type(attrs) is not list:
-            is_list = False
+        """ retrieves a dictionary representation """
+        if (type(attrs)) == list and all(type(i) == str for i in attrs):
+            return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         else:
-            for i in attrs:
-                if type(i) is not str:
-                    is_list = False
-
-        if not is_list:
             return self.__dict__
-        else:
-            dicti = {}
-            for attr in attrs:
-                if attr in self.__dict__:
-                    dicti[attr] = self.__dict__.get(attr)
-            return dicti
