@@ -2,6 +2,7 @@
 """appends a string at the end of a text file
     """
 
+
 def append_write(filename="", text=""):
     """appened string at end
     """
