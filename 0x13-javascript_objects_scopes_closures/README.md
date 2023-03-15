@@ -468,3 +468,11 @@ C is fun!
 Python is Cool!!!
 $
 ```
+
+### THANKS FOR CHECKING / READING
+
+## AUTHOR:
+
+>MONEHIN FEYISARA
+
+>EMAIL: monehinfeyisara.d@gmail.com
